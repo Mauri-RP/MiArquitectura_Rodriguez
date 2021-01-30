@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<!--  
+	OBJETIVOS /
+	El objetivo de deiseño poara esta página es el de crar un sitio web, para un estudio de arquitectura, en 
+	donde desde la própia pagina principal se puede tener un acercamiento de los proyectos que la empresa
+	viene realizando.
+
+	Se detalla a continuacion las ideas en cada sector
+	
+	<Header><menu> 
+	Colocar un menu "desplegable" en cual podemos recorrer todo el sitio web. Desde el principio a fin, en este sector tambien colocar el ícono de la empresa, y que este elemento puda verse en cada una de las páginas.
+	
+	<Main> 
+		<Sector 1> En este caso colocar un CARRUSEL DE IMAGENES DE PRESENTACIÓN
+		<Sector 2> Descripción de a que se dedica el estudio
+		<Sector 3>
+			<Sector 3a> Visualizador de Proyectos 
+			<Sector 3b> Descripción de los proyectos 
+			<Sector 3c> Plano de ubicación del mismo
+			<Sector 3d> Cuadrícula movil, donde esten los proyectos y se vayan moviendo en busca de otros proyectos. Las imagenes abriran en el visualizador si las clickeamos
+
+	<Footer> Colocaremos la parte de contacto e información extra.
+
+
+	La idea general de la pagina es armar algo con interaccion ya que para los estudios son importante el mostrar fotos y graficamente sus proyectos y/o productos.
+	
+ -->
+
+<html>
+<head>
+	<meta charset="utf-8">
+
+<!-- ---------------------------------------------------------- --> 
+    <title> Estudio de ARQUITECTURA </title>
+<!-- ---------------------------------------------------------- --> 
+    <meta name="description" content="Empresa de arquitectura enfocada a proyectos a medida. Diseñamos los proyectos de manera personalizada, haciendo de cada espacio un lugar unico.">
+<!-- ---------------------------------------------------------- -->
+    <meta name="keywords" content="Arquitectura, Diseño, Urbanismo, Construccion, Sueños, Proyectos, Edificios, Casa, Barbacoa, Jardín">
+<!-- ---------------------------------------------------------- -->
+    <meta name="author" content="Rodriguez Mauricio">
+<!-- ---------------------------------------------------------- -->  
+<!-- ---------------------------------------------------------- -->  
+    <meta property="og:locale" content="Es_es"> 
+<!-- ---------------------------------------------------------- -->  
+    <meta property="og:type" content="website"> 
+<!-- ---------------------------------------------------------- -->  
+    <meta property="og:title" content="Estudio de ARQUITECTURA">
+<!-- ---------------------------------------------------------- -->  
+    <meta property="og:descripcion" content="Empresa de arquitectura enfocada a proyectos a medida. Diseñamos los proyectos de manera personalizada, haciendo de cada espacio un lugar unico.">
+<!-- ---------------------------------------------------------- -->      
+    <meta property="og:url" content="https://miarquitectura.com.uy">
+<!-- ---------------------------------------------------------- -->  
+    <meta property="og:image" content="image/1.jpg">
+<!-- ---------------------------------------------------------- -->  
+
+
+	<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+	<header>
+<!----------------------------------------------------------------------
+ PRUEBA DE NAVEGADOR MEDIA QUERY EN NAVEGADOR 
+ ----------------------------------------------------------------------->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">MI ARQUITECTURA</a>
+                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-secondary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Home</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="proyectos.html">Proyects</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="noticias.html">News</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="equipo.html">Staff</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="contacto.html">Contact</a></li>
+                    </ul>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+    </header>
+
+
+<!---------------------------------------------------------------------
+NAVEGADOR ANTERIOR
+--------------------------------------------------------------------->
+<!-- 
+<body>
+	<header>
+		<nav>
+			<ul class="flexMenu">
+				<li><a href="index.html" title="">Home</a></li>
+				<li><a href="proyectos.html" title="">Proyects</a></li>
+				<li><a href="noticias.html" title="">News</a></li>
+				<li><a href="equipo.html" title="">Staff</a></li>
+				<li><a href="contacto.html" title="">Contact</a></li>
+			</ul>
+		</nav>
+
+	</header> 
+
+-------------------------------------------------------------------------
+
+-->
+
+	<main>
+	<br>	
+
+	<div id="grilla">
+			<header class="border">
+
+<!---------------------------------------------------------------------
+CAROUSEL
+--------------------------------------------------------------------->
+
+	<div id="carouselExampleControls" class="carousel slide col-md-7 container" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+                <!-- ---------------------------------------------------------------------------- -->
+		    	<img class="d-block w-100" src="imagenes/1.jpg" alt="Proyecto 1 (año 2020)">
+                <!-- ---------------------------------------------------------------------------- -->
+		  	</div>
+		  	<div class="carousel-item">
+                <!-- ---------------------------------------------------------------------------- -->
+		    	<img class="d-block w-100" src="imagenes/2.jpg" alt="Proyecto 2 (año 2018)">
+                <!-- ---------------------------------------------------------------------------- -->
+		  	</div>
+		  	<div class="carousel-item">
+                <!-- ---------------------------------------------------------------------------- -->
+		    	<img class="d-block w-100" src="imagenes/3.jpg" alt="Proyecto 3 (año 2015)">
+                <!-- ---------------------------------------------------------------------------- -->
+		  	</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only"></span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only"></span>
+		</a>
+	</div>
+	<!-- 		La idea es colocar el Carrusel de imágenes de ultimos proyectos (he intentado de colocarlo pero no le encuentro la vuelta para que quede, probe colocando lo mismo que pone Braian en clase y no me quedó
+				<div class="contenedor">
+				<div class="imagen-peli"><img src="imagenes/1.jpg" alt=""></div></div> --> -->
+<!--				<div class="imagen-peli"><img src="imagenes/2.jpg" alt=""></div></div>
+				<div class="imagen-peli"><img src="imagenes/3.jpg" alt=""></div></div>
+			</div>
+-->			</header>
+			
+			<section id="descripcion" class="border">
+			<div class="grilla__padre">
+				<div class="grilla__hijo1">
+                <!-- ---------------------------------------------------------- -->  
+				<h1 class="presentacion__titulo">Estudio de Arquitetcura</h1>
+                <!-- ---------------------------------------------------------- -->  
+				<p>Nos dedicamos a realizar proyactos arquitectonicos, urbanisticos y de diseño, de toda escala, ajustado a las necesidades del cliente..... etc</p>
+			</div>
+
+
+
+			
+		<div class="row justify-content-center">
+
+			</section>
+			<section id="ubiCa" class="border">
+				<div class="imagen-peli"><img class="presentacion__ubicacion" src="imagenes/gps.jpg" alt=""></div>Ubicación del proyecto</section>
+
+			<section id="imgP" class="border">
+				<div class="imagen-peli"><img src="imagenes/3.jpg" alt=""></section>
+		</div>
+
+<!-- 			<section id="imgA" class="border" class="grey">
+				<div class="imagen-peli"><img src="imagenes/A.jpg" alt=""></div>
+			</section>
+
+			<section id="imgB" class="border" class="grey">
+				<div class="imagen-peli"><img src="imagenes/B.jpg" alt=""></section>
+
+			<section id="imgC" class="border" class="grey">
+				<div class="imagen-peli"><img src="imagenes/C.jpg" alt=""></section>
+
+			<section id="imgD" class="border" class="grey">
+				<div class="imagen-peli"><img src="imagenes/D.jpg" alt=""></section>
+
+			<section id="imgE" class="border" class="grey">
+				<div class="imagen-peli"><img src="imagenes/E.jpg" alt=""></section>
+
+			<section id="imgF" class="border" class="grey">
+				<div class="imagen-peli"><img src="imagenes/F.jpeg" alt=""></section>
+
+			<section id="imgG" class="border" class="grey">
+				<div class="imagen-peli"><img src="imagenes/G.jpg" alt=""></section>
+
+			<section id="imgH" class="border" class="grey">
+				<div class="imagen-peli"><img src="imagenes/H.jpeg" alt=""></section> -->
+
+			<aside class="border" class="descripcion__tex">Descripción del proyecto que se esta visualizando</aside>
+			
+		</div>
+		
+<!--------------------------------------------------------------------------
+PRUEBA MEDIA QUERY EN GRILLA
+---------------------------------------------------------------------------->
+		<br>
+		<div class="row justify-content-center">
+					<!-- Portfolio Item 1-->
+		 
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x">Torres x 2</i></div>
+                            </div>
+                            <img class="img-fluid" src="imagenes/A.jpg" alt="" />
+                        </div>
+                    </div>
+
+                   <!-- Portfolio Item 2-->
+
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x">Casa B</i></div>
+                            </div>
+                            <img class="img-fluid gris" src="imagenes/B.jpg" alt="" /> gris
+                        </div>
+                    </div>
+
+          
+                    <!-- Portfolio Item 3-->
+
+                 
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x">Complejo San Rafael</i></div>
+                            </div>
+                            <img class="img-fluid gris" src="imagenes/C.jpg" alt="" />
+                        </div>
+                    </div>
+
+                   
+                    <!-- Portfolio Item 4-->
+
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x">Casa Jorge</i></div>
+                            </div>
+                            <img class="img-fluid gris" src="imagenes/D.jpg" alt="" />
+                        </div>
+                    </div>
+
+                   
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-3 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x">Casa de Veraneo</i></div>
+                            </div>
+                            <img class="img-fluid gris" src="imagenes/E.jpg" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-3 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x">Molino</i></div>
+                            </div>
+                            <img class="img-fluid gris" src="imagenes/F.jpeg" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 7-->
+                    <div class="col-md-6 col-lg-3 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x">Apartamentos x4</i></div>
+                            </div>
+                            <img class="img-fluid gris" src="imagenes/G.jpg" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 8-->
+                    <div class="col-md-6 col-lg-3 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x">Complejo Dinamarka</i></div>
+                            </div>
+                            <img class="img-fluid gris" src="imagenes/H.jpeg" alt="" />
+                        </div>
+                    </div>
+
+                    
+	</main>
+
+
+
+
+	<footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                	<!-- Gracias por su Visita -->
+<!--                 	<div class="col-lg-4 mb-5 mb-lg-0">
+                	 	<div>
+							<p id="Contacto">Contaco</p>
+							<p><li><a href="contacto.html">Contáctenos</a></li></p>
+						</div>
+						
+						<div>
+							<h5 class="paraTransicion"> Gracias por su Visita </h5>
+						</div> -->
+
+
+
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            2215 John Daniel Drive
+                            <br />
+                            Clark, MO 65243
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Contact</h4>
+                        <p class="lead mb-0">
+                            Freelance is a free to use, MIT licensed Bootstrap theme created by
+                            <a href="contacto.html">Contáctenos</a>
+
+                       
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+		
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------->
+	 <!-- PRUEBA DE MODAL (sacada de un theme)-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Torres x 2</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+
+                                    <!-- -------------------------------------------------------------------------------------------
+                                     PRUEBA DE CARUSEL EN EL MODAL 
+                                 	--------------------------------------------------------------------------------------------- -->
+                                    <div id="carouselExampleControls" class="carousel slide col-md-7 container" data-ride="carousel">
+									
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+									    	<img class="d-block w-100" src="imagenes/1.jpg" alt="First slide">
+									  	</div>
+									  	<div class="carousel-item">
+									    	<img class="d-block w-100" src="imagenes/2.jpg" alt="Second slide">
+									  	</div>
+									  	<div class="carousel-item">
+									    	<img class="d-block w-100" src="imagenes/3.jpg" alt="Third slide">
+									  	</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only"></span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only"></span>
+									</a>
+									</div>
+
+									<!-- -------------------------------------------------------------------------------------------- -->
+                                    
+
+
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Este proyecto se encuentra ubicado en la ciudad de ...........<br>
+                                    				Fue construdio en el año 2010, y cuenta con 12000 m2 cosntruidos, con mas de 200 apartamentos 
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">VER</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">VER 2</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Controller</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">VER 3</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">VER 4</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+<!------------------------------------------------------------------------------------------------------------------->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

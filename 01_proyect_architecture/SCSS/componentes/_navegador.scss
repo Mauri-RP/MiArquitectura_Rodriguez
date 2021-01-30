@@ -1,0 +1,22 @@
+header nav .flexMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 40px;
+  font-size: 1.2rem;
+}
+
+.flexMenu li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+.flexMenu li a:hover {
+  background-color: white;
+  color: grey;
+  padding: 20px;
+}
+

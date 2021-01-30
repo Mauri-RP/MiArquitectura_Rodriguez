@@ -1,0 +1,30 @@
+
+/*$color-textoPrincipal: rgb(0,104,107)*/
+
+*{color: white}
+*{background: grey}
+/*h1{color: rgb(0,104,107);}*/
+
+
+.presentacion__titulo{
+	color: rgb(0,104,107);
+}
+
+
+.presentacion__ubicacion{
+	height: 200px;
+	width: 100%;}
+
+.descripcion__tex{
+	font-size: 10px;
+}
+
+
+
+header{
+	grid-area: carrusel;
+	
+	color: white;
+	justify-content: center;
+}
+

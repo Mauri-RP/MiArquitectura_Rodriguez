@@ -1,0 +1,299 @@
+
+/*$color-textoPrincipal: rgb(0,104,107)*/
+
+*{color: white}
+*{background: grey}
+/*h1{color: rgb(0,104,107);}*/
+
+
+.presentacion__titulo{
+	color: rgb(0,104,107);
+}
+
+
+.presentacion__ubicacion{
+	height: 200px;
+	width: 100%;}
+
+.descripcion__tex{
+	font-size: 10px;
+}
+
+
+
+/*----------------------------------------------------------------*/
+/*MENU PRINCIPAL / _navegador.scss */
+/*----------------------------------------------------------------*/
+header nav .flexMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 40px;
+  font-size: 1.2rem;
+}
+
+.flexMenu li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+.flexMenu li a:hover {
+  background-color: white;
+  color: $bg-color-textoPrincipal;
+  padding: 20px;}
+/*----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------*/
+/*Cabecera de Imágen que se mueve / _main.scss*/
+/*----------------------------------------------------------------*/
+main{
+	width: 100%;
+	height: 100%;
+	border: solid 1px black;
+	overflow: hidden;
+}
+
+.contenedor{
+	width: 100%;
+	height: 100%;
+
+	display: grid;
+	grid-template-rows: 200px;
+	grid-template-columns: 100% 100% 100%;
+
+	animation-play-state: slider 5s infinite;
+	position: relative;
+	overflow: hidden;
+}
+
+.contenedor:hover{
+	animation-play-state: paused;
+}
+
+/*img{width: 100%;
+	height: 200px;}*/
+
+textarea{
+	color: black;
+	background-color: white;
+}
+
+@keyframes slider{
+	from{
+		right: 0%;
+	}
+	50%{
+		right: 100%;
+	}
+	to{
+		right: 200%;
+	}
+}
+/*----------------------------------------------------------------*/
+/*Cuerpo de Informacón / _grilla.scss*/
+/*----------------------------------------------------------------*/
+.grilla__padre{
+	width: 100%;
+	height: 1400px;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap; 
+	/*flex-flow: nowrap;*/
+	justify-content: space-evenly center;
+
+	/*align-items: center;*/
+
+
+}
+
+.grilla__hijo1, .grilla__hijo2, .grilla__hijo3, .grilla__hijo4{
+	flex-shrink: 20%;
+	flex-grow: 1;
+	/*width: 25%;
+	height: 25%;*/}
+
+/*----------------------------------------------------------------*/
+/* Footer / _footer.scss*/
+/*----------------------------------------------------------------*/
+
+footer {
+  width: 100%;
+  height: 100px;
+  padding: 50px 0 0 0;
+
+}
+
+footer h5 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  background-image: linear-gradient(to top, grey, black);
+}
+
+
+.paraTransicion:hover {
+  transition: 3s;
+  font-size: 3rem;
+}
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/*Grillas / _grid.scss*/
+/*----------------------------------------------------------------*/
+#grilla{
+	display: grid;
+	grid-template-areas: 
+		"carrusel carrusel carrusel carrusel"
+		"desc desc desc desc"
+		"imgP imgP imgP asideD"
+		"imgP imgP imgP ubiCa"
+		"imgA imgB imgC imgD"
+		"imgE imgF imgG imgH"
+		"footer footer footer footer";
+
+	grid-template-rows: 250px 75px 250px 250px 150px 150px 50px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
+	grid-row-gap: 15px;
+	grid-column-gap: 10px;
+	height: 100vh;
+	margin: 0;
+}
+
+.border{
+	border: 1px solid black;
+}
+
+/*----------------------------------------------------------------*/
+header{
+	grid-area: carrusel;
+	
+	color: white;
+	justify-content: center;
+}
+/*----------------------------------------------------------------*/
+/*_grid.scss*/
+
+section#descripcion{
+	grid-area: desc;
+	background-color: darkgrey;
+	opacity: 1;
+}
+
+section#imgP{
+	grid-area: imgP;
+	background-color: yellow;
+	
+}
+
+section#ubiCa{
+	grid-area: ubiCa;
+	background-color: green;
+	justify-content: center;
+}
+
+section#imgA{
+	grid-area: imgA;
+	background-color: white;
+	opacity: 0.8;
+}
+
+section#imgB{
+	grid-area: imgB;
+	background-color: white;
+	opacity: 0.8;
+}
+
+section#imgC{
+	grid-area: imgC;
+	background-color: white;
+	opacity: 0.8;
+}
+
+section#imgD{
+	grid-area: imgD;
+	background-color: white;
+	opacity: 0.8;
+}
+
+section#imgE{
+	grid-area: imgE;
+	background-color: white;
+	opacity: 0.8;
+}
+
+section#imgF{
+	grid-area: imgF;
+	background-color: white;
+	opacity: 0.8;
+}
+
+section#imgG{
+	grid-area: imgG;
+	background-color: white;
+	opacity: 0.8;
+}
+
+section#imgH{
+	grid-area: imgH;
+	background-color: white;
+	opacity: 0.8;
+}
+
+aside{
+	grid-area: asideD;
+	background-color: darkgrey;
+}
+
+footer{
+	grid-area: footer;
+}
+
+img{
+	height: 200px;
+	width: 100%;
+}
+
+#imgA img, #imgB img, #imgC img, #imgD img, #imgE img, #imgF img, #imgG img, #imgH img
+{height: 150px; width: 100%; filter: grayscale(100%);}
+
+#imgP img{height: 515px; width: 100%;}
+
+.img-circle{
+	height: 75px;
+	width: 75px;
+}
+/*----------------------------------------------------------------*/
+
+
+
+/*
+-----------------------------------------------------
+Prueba de CSS
+-----------------------------------------------------
+.topnav {
+  overflow: hidden;
+  background-color: #333;}
+-----------------------------------------------------
+Topnav links 
+-----------------------------------------------------
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+@media screen and (max-width: 600px) {
+.topnav a {
+    float: none;
+    width: 100%;
+  }
+-----------------------------------------------------
+*/

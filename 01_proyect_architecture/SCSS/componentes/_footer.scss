@@ -1,0 +1,19 @@
+footer {
+  width: 100%;
+  height: 100px;
+  padding: 50px 0 0 0;
+
+}
+
+footer h5 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  background-image: linear-gradient(to top, grey, black);
+}
+
+
+.paraTransicion:hover {
+  transition: 3s;
+  font-size: 3rem;
+}
